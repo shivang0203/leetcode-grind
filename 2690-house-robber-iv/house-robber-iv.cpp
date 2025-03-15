@@ -12,7 +12,7 @@ public:
         return count>=k;
     }
     int minCapability(vector<int>& nums, int k) {
-        int left=1;
+        int left=*min_element(nums.begin(),nums.end());
         int right= *max_element(nums.begin(),nums.end());
         int ans=right;
         while(left<=right){
