@@ -18,7 +18,7 @@ public:
             }
         });
 
-        // Step 3: Create a result vector and fill it with the sorted original nums
+
         vector<int> sortedNums(nums.size());
         for (int i = 0; i < mappedList.size(); i++) {
             sortedNums[i] = get<0>(mappedList[i]);
