@@ -1,7 +1,7 @@
 class Solution {
 public:
     int countCompleteSubarrays(vector<int>& nums) {
-        set<int> distinctElements(nums.begin(), nums.end());
+        unordered_set<int> distinctElements(nums.begin(), nums.end());
         int totalDistinct = distinctElements.size();
         int count = 0;
         int n = nums.size();
